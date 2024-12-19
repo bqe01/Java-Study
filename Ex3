@@ -1,0 +1,15 @@
+package hw;
+
+import java.util.Scanner;
+
+public class Example3 {
+
+	public static void main(String[] args) {
+			Scanner scan=new Scanner(System.in);
+		System.out.print("Please enter radius of circle:");
+		double radius=scan.nextDouble();
+		double area=Math.PI*radius*radius;
+		System.out.println("Area of circle:"+area);
+	}
+
+}
