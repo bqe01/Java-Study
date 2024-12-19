@@ -1,0 +1,24 @@
+package hw;
+
+import java.util.Scanner;
+
+public class Example7 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Please enter midterm 1 score:");
+		int mid1=scan.nextInt();
+		System.out.print("Please enter midterm 2 score:");
+		int mid2=scan.nextInt();
+		System.out.print("Please enter assignment score:");
+		int assignment=scan.nextInt();
+		System.out.print("Please enter quiz score:");
+		int quiz=scan.nextInt();
+		System.out.print("Please enter final score:");
+		int final1=scan.nextInt();
+		
+		double grade=mid1*0.15+mid2*0.15+assignment*0.2+quiz*0.1+final1*0.4;
+		System.out.println("Your overall grade:"+grade);
+	}
+
+}
