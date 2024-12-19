@@ -1,0 +1,17 @@
+package hw;
+
+import java.util.Scanner;
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Please enter first number:");
+		int x=scan.nextInt();
+		System.out.print("Please enter second number:");
+		int y=scan.nextInt();
+		System.out.println(x+"/"+y+"="+x/y);
+		
+	}
+
+}
