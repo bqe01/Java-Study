@@ -1,0 +1,41 @@
+
+/* 
+Write a program to withdraw cash from an ATM that lists the number of
+banknotes to be requested from the bank based on the amount of money the
+user wishes to withdraw. 
+*/
+
+
+
+package hw;
+
+import java.util.Scanner;
+
+public class Example8 {
+
+	public static void main(String[] args) {
+		int b200,b100,b50,b20,b10;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("please enter amount of your money:");
+		int money=scan.nextInt();
+		b200=money/200;
+		money-=b200*200;
+		b100=money/100;
+		money-=b100*100;
+		b50=money/50;
+		money-=b50*50;
+		b20=money/20;
+		money-=b20*20;
+		b10=money/10;
+		money-=b10*10;
+		
+		System.out.println("Number of 200 liras:"+b200);
+		System.out.println("Number of 100 liras:"+b100);
+		System.out.println("Number of 50 liras:"+b50);
+		System.out.println("Number of 20 liras:"+b20);
+		System.out.println("Number of 10 liras:"+b10);
+		System.out.println("Money cannot be withdrawn:"+money);
+
+	}
+
+}
