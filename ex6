@@ -10,6 +10,7 @@ public class Example6 {
 		double income=scan.nextDouble();
 		double tax=income*0.18;
 		System.out.printf("%.2f",tax);
+
 	}
 
 }
