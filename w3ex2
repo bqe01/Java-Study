@@ -1,0 +1,46 @@
+/*
+Write a Java program that take the mark from the Console and prints your
+grade.
+The mark can not be lower than 0 and greater than 100
+For the mark between 0-100 return grade by using switch case.
+*/
+
+package week3;
+import java.util.Scanner;
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Please enter your mark:");
+		int mark=scan.nextInt();
+		if(mark<0 || mark>100)
+			System.out.println("Please enter a valid mark");
+		else
+		{
+			switch(mark/10)
+			{
+			case 10:
+			case 9: 
+				System.out.println("Your Grade is A");
+				break;
+			case 8:
+			case 7:
+				System.out.println("Your Grade is B");
+				break;
+			case 6:
+				System.out.println("Your Grade is C");
+				break;
+			case 5:
+			case 4:
+				System.out.println("Your Grade is D");
+				break;
+			default:
+				System.out.println("Your Grade is F");
+				break;
+				
+			}
+		}
+	}
+
+}
