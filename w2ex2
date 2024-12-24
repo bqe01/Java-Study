@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Exercise2 {
+    public static void main(String[] args) {
+        
+        double side1, side2, area;
+        char selection;
+        
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please select a shape");
+        selection = scan.next().charAt(0); // Reading first element of the given input
+        if(selection=='S' || selection=='s'){
+            System.out.println("Please enter side length of square");
+            side1 = scan.nextDouble();
+            area = side1*side1;
+            System.out.println("Area of the square is "+ area);
+        }
+        if(selection=='R' || selection=='r'){
+            System.out.println("Please enter short edge length of rectangle");
+            side1 = scan.nextDouble();
+            System.out.println("Please enter long edge length of rectangle");
+            side2 = scan.nextDouble();
+            area = side1*side2;
+            System.out.println("Area of the rectangle is "+ area);
+        }
+		else{
+			System.out.println("You have not selected a valid shape");
+		}
+    }
+}
