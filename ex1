@@ -9,5 +9,6 @@ public class Example1 {
 		System.out.print("Please enter your name:");
 		String name=scan.nextLine();
 		System.out.println("Hello "+name);
+
 	}}
 
