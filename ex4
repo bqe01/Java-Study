@@ -14,4 +14,5 @@ public class Example4 {
 		System.out.println(x+"^4:"+Math.pow(x, 4));
 
 	}
+
 }
