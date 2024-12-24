@@ -25,6 +25,7 @@ class Exercise2 {
         }
 		else{
 			System.out.println("You have not selected a valid shape");
+
 		}
     }
 }
