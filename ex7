@@ -21,4 +21,5 @@ public class Example7 {
 		System.out.println("Your overall grade:"+grade);
 	}
 
+
 }
