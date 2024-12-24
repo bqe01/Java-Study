@@ -15,4 +15,5 @@ public class Example5 {
 		System.out.println(p2+":"+p3+":"+p1);
 	}
 
+
 }
