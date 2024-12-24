@@ -10,6 +10,7 @@ public class Example3 {
 		double radius=scan.nextDouble();
 		double area=Math.PI*radius*radius;
 		System.out.println("Area of circle:"+area);
+
 	}
 
 }
