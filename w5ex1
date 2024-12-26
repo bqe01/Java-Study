@@ -1,0 +1,24 @@
+/*
+Write a Java program that prints odd numbers up to a random number in
+the range of [10,100] on the screen. 
+*/
+
+import java.util.Scanner;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+
+		Scanner scan=new Scanner(System.in);
+		int n=10+ (int) (Math.random()*91); // Generating a random number between 10-100
+		System.out.println("Generated number:"+n);
+		System.out.println("Odd numbers in the range of [10 "+n+"]:");
+		for(int i=11;i<=n;i++)
+		{
+			if(i%2==1)
+				System.out.print(i+" ");
+		}
+	
+	}
+
+}
