@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Example3 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Please enter a number:");
+		int n=scan.nextInt();
+		while(n<0)
+		{
+			System.out.print("Please enter a valid number:");
+			n=scan.nextInt();
+		}
+		System.out.println("The prime factors of "+n+":");
+		while(n%2==0)
+		{
+			System.out.print(2+" ");
+			n/=2;
+		}
+		for(int i=3;i<Math.sqrt(n);i+=2) //Math.sqrt(n) calculates the square root of n and improves the performance of the loop (since prime factors cannot exceed the square root of the number).
+		{
+			while(n%i==0)
+			{
+				System.out.print(i+" ");
+				n/=i;
+			}
+		}
+		if(n>2) // If the remaining number is greater than 2, it is a prime factor and will be printed to the screen.
+			System.out.print(n);
+	}
+
+}
