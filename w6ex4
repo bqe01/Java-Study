@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter two numbers:");
+		Scanner scanner=new Scanner(System.in);
+		
+		int n1=scanner.nextInt();
+		
+		int n2=scanner.nextInt();
+		
+		System.out.printf("LCM of %d and %d is %d ",n1,n2,LCM(n1,n2));
+
+	}
+
+	private static int LCM(int n1, int n2) {
+		
+		
+		int lcm=1;
+		
+		for(int div=2;n1!=1 || n2!=1;div++)
+		{
+			
+			while(n1%div==0 || n2%div==0  )
+			{
+				if(n1%div==0) n1=n1/div;
+				if(n2%div==0) n2=n2/div;
+				
+				
+				lcm*=div;
+				
+			}
+			
+		}
+		return lcm;
+		
+		
+		
+	}
+
+}
